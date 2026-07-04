@@ -10,7 +10,7 @@ requires = [ "setuptools>=82.0.1" ]
 # ==============================================================================
 [project]
 name = "web-tools"
-version = "0.3.6"
+version = "0.3.7"
 description = "Standalone web content fetching, conversion, and quoting tools."
 readme = "README.md"
 keywords = [ "html", "library", "markdown", "python", "web" ]

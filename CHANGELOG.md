@@ -6,6 +6,13 @@ All notable changes to this project will be documented in this file.
 
 - Initial reusable Web tools library baseline.
 
+## v0.3.7 (2026-07-04)
+
+### Fix
+
+- promote repository rename sync
+- sync repository rename references
+
 ## v0.3.6 (2026-06-19)
 
 ### Fix
