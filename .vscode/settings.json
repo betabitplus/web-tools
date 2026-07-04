@@ -14,8 +14,8 @@
     "python.testing.cwd": "${workspaceFolder}",
     "python.testing.pytestArgs": [
         "tests"
-        ],
-        "python.testing.pytestPath": "${workspaceFolder}/.venv/bin/pytest",
+    ],
+    "python.testing.pytestPath": "${workspaceFolder}/.venv/bin/pytest",
     "python.testing.autoTestDiscoverOnSaveEnabled": false,
     // Optional: suppress generic recommendation popups (extensions are auto-installed via devcontainer)
     "extensions.ignoreRecommendations": true

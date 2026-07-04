@@ -51,11 +51,11 @@ RUN pip install --no-cache-dir \
     refurb \
     typos
 
-# Copy project files (needed for linters and type checkers)
-COPY pyproject.toml ./
-COPY src/ ./src/
-COPY tests/ ./tests/
-COPY .pre-commit-config.yaml ./
+# Copy project files needed for linters and type checkers.
+COPY .pre-commit-config.yaml ./.pre-commit-config.yaml
+COPY pyproject.toml ./pyproject.toml
+COPY src ./src
+COPY tests ./tests
 
 # Default: keep container running for GitHub Actions
 ENTRYPOINT ["tail", "-f", "/dev/null"]

@@ -1,7 +1,12 @@
-_commit: v0.28.29
+_commit: v0.29.0
 _src_path: https://github.com/betabitplus/py-lib-starter.git
 author_email: 8123085+betabitplus@users.noreply.github.com
 author_name: betabitplus
+ci_image_copy_paths:
+  - .pre-commit-config.yaml
+  - pyproject.toml
+  - src
+  - tests
 ci_playwright_browsers:
   - chromium
 config_class_name: WebToolsConfig
@@ -35,9 +40,14 @@ project_title: Web Tools
 project_title_lower: web tools
 renovate_uv_ignored_updates: []
 repository_name: web-tools
-runtime_git_ref: v0.28.29
+runtime_git_ref: v0.29.0
 runtime_git_subdirectory: packages/py-lib-runtime
 runtime_git_url: https://github.com/betabitplus/py-lib-starter.git
-tooling_git_ref: v0.28.29
+template_profile: python-lib-standard
+tooling_git_ref: v0.29.0
 tooling_git_subdirectory: packages/py-lib-tooling
 tooling_git_url: https://github.com/betabitplus/py-lib-starter.git
+workspace_python_paths:
+  - src
+workspace_test_paths:
+  - tests
