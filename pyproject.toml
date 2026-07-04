@@ -40,10 +40,10 @@ dependencies = [
   "tenacity>=9.1.4",
 ]
 # --- Project URLs ---
-urls."Bug Tracker" = "https://github.com/betabitplus/web_tools/issues"
-urls.Documentation = "https://github.com/betabitplus/web_tools/tree/main/docs"
-urls.Homepage = "https://github.com/betabitplus/web_tools"
-urls.Repository = "https://github.com/betabitplus/web_tools"
+urls."Bug Tracker" = "https://github.com/betabitplus/web-tools/issues"
+urls.Documentation = "https://github.com/betabitplus/web-tools/tree/main/docs"
+urls.Homepage = "https://github.com/betabitplus/web-tools"
+urls.Repository = "https://github.com/betabitplus/web-tools"
 
 [dependency-groups]
 dev = [
