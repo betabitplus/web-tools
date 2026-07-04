@@ -21,7 +21,7 @@ From an up-to-date `py-lib-starter` checkout, create or resume a managed
 repository with:
 
 ```bash
-scripts/platform/create_managed_repository.sh <repository-name>
+uv run py-lib-create-managed-repository <repository-name>
 ```
 
 For an existing standalone repository, configure GitHub App credentials, the
