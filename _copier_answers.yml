@@ -8,19 +8,19 @@ config_class_name: WebToolsConfig
 copyright_year: '2026'
 e2e_slices:
   - name: public-boundary
-    path: tests/__PACKAGE_NAME__/e2e/public_boundary
+    path: tests/web_tools/e2e/public_boundary
   - name: examples
-    path: tests/__PACKAGE_NAME__/e2e/examples
+    path: tests/web_tools/e2e/examples
   - name: fetch-cache-and-page-artifacts
-    path: tests/__PACKAGE_NAME__/e2e/fetch_cache_and_page_artifacts
+    path: tests/web_tools/e2e/fetch_cache_and_page_artifacts
   - name: html-conversion-and-visual-manifest
-    path: tests/__PACKAGE_NAME__/e2e/html_conversion_and_visual_manifest
+    path: tests/web_tools/e2e/html_conversion_and_visual_manifest
   - name: media-extraction-and-download-policy
-    path: tests/__PACKAGE_NAME__/e2e/media_extraction_and_download_policy
+    path: tests/web_tools/e2e/media_extraction_and_download_policy
   - name: public-output-and-errors
-    path: tests/__PACKAGE_NAME__/e2e/public_output_and_errors
+    path: tests/web_tools/e2e/public_output_and_errors
   - name: quote-text-and-elements
-    path: tests/__PACKAGE_NAME__/e2e/quote_text_and_elements
+    path: tests/web_tools/e2e/quote_text_and_elements
 env_prefix: WEB_TOOLS
 error_class_name: WebToolsError
 github_owner: betabitplus
@@ -34,7 +34,7 @@ project_slug: web-tools
 project_title: Web Tools
 project_title_lower: web tools
 renovate_uv_ignored_updates: []
-repository_name: web_tools
+repository_name: web-tools
 runtime_git_ref: v0.28.28
 runtime_git_subdirectory: packages/py-lib-runtime
 runtime_git_url: https://github.com/betabitplus/py-lib-starter.git
