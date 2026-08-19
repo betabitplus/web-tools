@@ -17,7 +17,7 @@ jobs:
     with:
       python-version: "3.13"
       runtime-audit-exclude-package: "py-lib-runtime"
-      runtime-audit-ignore-vulnerabilities: ""
+      runtime-audit-ignore-vulnerabilities: "CVE-2025-69872"
       playwright-browsers: "chromium"
     secrets:
       app-private-key: ${{ secrets.TERNFORGE_SOURCE_READ_PRIVATE_KEY }}

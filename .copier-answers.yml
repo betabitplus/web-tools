@@ -26,7 +26,10 @@ github_owner: betabitplus
 gitignore_extra_patterns: []
 initial_version: 0.3.8
 package_name: web_tools
-pip_audit_waivers: []
+pip_audit_waivers:
+-   id: CVE-2025-69872
+    rationale: No patched upstream release exists; diskcache is used only by isolated development workbench scenarios with process-created temporary cache directories, so untrusted cache writers are outside the supported boundary.
+    remove_when: Remove after a patched diskcache release is adopted.
 project_description: Standalone web content fetching, conversion, and quoting tools.
 project_name: web-tools
 project_slug: web-tools
