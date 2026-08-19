@@ -431,6 +431,14 @@ package_names = [ "web_tools" ]
 env_prefix = "WEB_TOOLS"
 secrets.env_files = []
 
+# ---------------- Pip Audit (repository-scoped vulnerability waivers) ----------------
+[tool.pip-audit]
+# CVE-2025-69872: No patched upstream release exists; diskcache is used only by isolated development workbench scenarios with process-created temporary cache directories, so untrusted cache writers are outside the supported boundary.
+# Remove when: Remove after a patched diskcache release is adopted.
+ignore-vulns = [
+  "CVE-2025-69872",
+]
+
 # ---------------- Import-linter architecture contracts ----------------
 [tool.importlinter]
 root_packages = [
