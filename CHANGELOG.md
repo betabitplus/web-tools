@@ -6,6 +6,13 @@ All notable changes to this project will be documented in this file.
 
 - Initial reusable Web tools library baseline.
 
+## v0.3.8 (2026-08-19)
+
+### Fix
+
+- **deps**: resolve runtime security advisories (#42)
+- **deps**: resolve runtime security advisories (#41)
+
 ## v0.3.7 (2026-07-04)
 
 ### Fix
