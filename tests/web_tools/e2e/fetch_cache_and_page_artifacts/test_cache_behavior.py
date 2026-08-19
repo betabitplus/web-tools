@@ -31,7 +31,7 @@ from pathlib import Path
 from tempfile import TemporaryDirectory
 
 import pytest
-from py_lib_tooling import console, run_async
+from py_lib_testkit import console, run_async
 
 from web_tools import FetchResponse, configure_cache, fetch_html
 

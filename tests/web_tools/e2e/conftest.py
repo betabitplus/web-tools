@@ -12,7 +12,7 @@ from pathlib import Path
 from threading import Thread
 
 import pytest
-from py_lib_tooling import (
+from py_lib_testkit import (
     require_vcr_cassette_or_record_mode,
 )
 

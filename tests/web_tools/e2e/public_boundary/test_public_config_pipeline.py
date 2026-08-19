@@ -9,7 +9,7 @@ Why:
 from __future__ import annotations
 
 import pytest
-from py_lib_tooling import console
+from py_lib_testkit import console
 
 from web_tools import WebToolsConfig, get_web_tools_config, install_web_tools_config
 

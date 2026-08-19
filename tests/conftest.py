@@ -14,7 +14,7 @@ from __future__ import annotations
 from typing import Any
 
 import pytest
-from py_lib_tooling import configure_pytest_process
+from py_lib_testkit import configure_pytest_process
 from syrupy.assertion import SnapshotAssertion
 from syrupy.extensions.json import JSONSnapshotExtension
 

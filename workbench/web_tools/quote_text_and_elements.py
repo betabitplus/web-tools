@@ -23,7 +23,7 @@ Checks:
 Examples:
     Run manually:
         uv run python -m workbench.web_tools.quote_text_and_elements
-        uv run py-lib-reproduce-running-loop \
+        uv run python scripts/reproduce_running_loop.py \
             workbench.web_tools.quote_text_and_elements
 
     Run in a notebook:
@@ -44,7 +44,7 @@ from typing import Any
 
 from PIL import Image, ImageDraw
 from playwright.async_api import Page, async_playwright
-from py_lib_tooling import console, run_async
+from py_lib_testkit import console, run_async
 
 # =============================================================================
 # Scenario

@@ -1,113 +1,23 @@
-# CI Pipeline
-# Thin generated orchestration over reusable starter-owned CI workflows.
-# Self-hosted runners and App credentials are used only for trusted same-repo
-# events. Fork pull requests run the baseline on GitHub-hosted infrastructure.
-
 name: CI
 
 on:
-  workflow_dispatch:
-  push:
-    branches: [dev]
   pull_request:
-    branches: [main, dev]
-    types: [opened, edited, synchronize, reopened, ready_for_review]
+    branches: [main]
+    types: [opened, reopened, synchronize, edited]
+  workflow_dispatch:
 
-concurrency:
-  group: ci-${{ github.workflow }}-${{ github.ref }}
-  cancel-in-progress: true
+permissions:
+  contents: read
+  pull-requests: read
 
 jobs:
-  baseline:
-    name: Baseline Repo Verification
-    uses: ./.github/workflows/python-lib-ci-baseline.yml
+  ci:
+    name: ci
+    uses: betabitplus/ternforge-infra-ci/.github/workflows/python-library.yml@bf5d127900edaa9bd9d7e490de11b034fe2554a4 # v5.2.0
     with:
       python-version: "3.13"
-    secrets: inherit
-
-  package:
-    name: Package Verification
-    if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository
-    uses: ./.github/workflows/python-lib-ci-package.yml
-    with:
-      python-version: "3.13"
-    secrets: inherit
-
-  e2e-slices:
-    name: E2E Slice (${{ matrix.name }})
-    if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository
-    uses: ./.github/workflows/python-lib-ci-e2e-slice.yml
-    strategy:
-      fail-fast: false
-      matrix:
-        include:
-          - name: public-boundary
-            path: tests/web_tools/e2e/public_boundary
-          - name: examples
-            path: tests/web_tools/e2e/examples
-          - name: fetch-cache-and-page-artifacts
-            path: tests/web_tools/e2e/fetch_cache_and_page_artifacts
-          - name: html-conversion-and-visual-manifest
-            path: tests/web_tools/e2e/html_conversion_and_visual_manifest
-          - name: media-extraction-and-download-policy
-            path: tests/web_tools/e2e/media_extraction_and_download_policy
-          - name: public-output-and-errors
-            path: tests/web_tools/e2e/public_output_and_errors
-          - name: quote-text-and-elements
-            path: tests/web_tools/e2e/quote_text_and_elements
-    with:
-      python-version: "3.13"
-      e2e-path: ${{ matrix.path }}
+      runtime-audit-exclude-package: "py-lib-runtime"
+      runtime-audit-ignore-vulnerabilities: ""
       playwright-browsers: "chromium"
-    secrets: inherit
-
-  merge-gate:
-    name: ci/merge-gate
-    runs-on: ${{ github.event.repository.private != true && 'ubuntu-latest' || github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name != github.repository && 'ubuntu-latest' || fromJSON(vars.CI_RUNNER_LABELS_JSON || '["ubuntu-latest"]') }}
-    needs:
-      - baseline
-      - package
-      - e2e-slices
-    if: ${{ always() }}
-    permissions:
-      contents: read
-
-    steps:
-      - name: Enforce source policy and require applicable CI jobs to pass
-        env:
-          EVENT_NAME: ${{ github.event_name }}
-          BASE_BRANCH: ${{ github.base_ref }}
-          HEAD_REPOSITORY: ${{ github.event.pull_request.head.repo.full_name }}
-          BASE_REPOSITORY: ${{ github.repository }}
-          HEAD_BRANCH: ${{ github.head_ref }}
-          BASELINE_RESULT: ${{ needs.baseline.result }}
-          PACKAGE_RESULT: ${{ needs.package.result }}
-          E2E_RESULT: ${{ needs['e2e-slices'].result }}
-        run: |
-          set -euo pipefail
-
-          if [ "${EVENT_NAME}" = pull_request ] && [ "${BASE_BRANCH}" = main ]; then
-            if [ "${HEAD_REPOSITORY}" != "${BASE_REPOSITORY}" ] || [ "${HEAD_BRANCH}" != dev ]; then
-              echo "Only the same repository's dev branch may open pull requests to main." >&2
-              exit 1
-            fi
-          fi
-
-          if [ "${BASELINE_RESULT}" != success ]; then
-            echo "Baseline result: ${BASELINE_RESULT}" >&2
-            exit 1
-          fi
-
-          if [ "${EVENT_NAME}" = pull_request ] && [ "${HEAD_REPOSITORY}" != "${BASE_REPOSITORY}" ]; then
-            [ "${PACKAGE_RESULT}" = skipped ] && [ "${E2E_RESULT}" = skipped ] || {
-              echo "Fork PR must not run package or e2e jobs." >&2
-              exit 1
-            }
-            exit 0
-          fi
-
-          if [ "${PACKAGE_RESULT}" != success ] || [ "${E2E_RESULT}" != success ]; then
-            printf 'CI job results: baseline=%s package=%s e2e-slices=%s\n' \
-              "${BASELINE_RESULT}" "${PACKAGE_RESULT}" "${E2E_RESULT}" >&2
-            exit 1
-          fi
+    secrets:
+      app-private-key: ${{ secrets.TERNFORGE_SOURCE_READ_PRIVATE_KEY }}

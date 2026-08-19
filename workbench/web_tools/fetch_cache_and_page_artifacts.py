@@ -21,7 +21,7 @@ Checks:
 Examples:
     Run manually:
         uv run python -m workbench.web_tools.fetch_cache_and_page_artifacts
-        uv run py-lib-reproduce-running-loop \
+        uv run python scripts/reproduce_running_loop.py \
             workbench.web_tools.fetch_cache_and_page_artifacts
 """
 
@@ -36,7 +36,7 @@ from urllib.parse import urlparse
 
 import httpx
 from diskcache import Cache
-from py_lib_tooling import console
+from py_lib_testkit import console
 
 # =============================================================================
 # Scenario

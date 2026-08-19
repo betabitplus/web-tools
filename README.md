@@ -18,8 +18,7 @@ helpers.
 ## Quickstart
 
 ```bash
-uv sync --group dev
-uv run py-lib-smoke-public-api
+bash scripts/env/setup.sh
 uv run pytest tests/web_tools -m "not slow" -q
 ```
 
@@ -39,7 +38,7 @@ print(response.manifest.counts)
 - `tests/web_tools/` contains package-specific verification.
 - `workbench/web_tools/` contains manual probes that do not import the shipped package.
 - `docs/web_tools/` contains package architecture, usage, and verification notes.
-- Shared test and repo tooling comes from `py-lib-tooling`.
+- Shared test support comes from `py-lib-testkit`; repository policy comes from `py-lib-policy`.
 - Shared runtime support comes from `py-lib-runtime`.
 
 ## Documentation

@@ -15,7 +15,7 @@ from __future__ import annotations
 import sys
 from pathlib import Path
 
-from py_lib_tooling import configure_direct_module_process, get_project_tooling_config
+from py_lib_testkit import configure_direct_module_process, get_project_tooling_config
 
 _PROJECT_CONFIG = get_project_tooling_config()
 

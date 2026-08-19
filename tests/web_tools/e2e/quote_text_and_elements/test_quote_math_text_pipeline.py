@@ -34,7 +34,7 @@ from __future__ import annotations
 
 import pytest
 from IPython.display import display
-from py_lib_tooling import console, run_async
+from py_lib_testkit import console, run_async
 from syrupy.assertion import SnapshotAssertion
 
 from web_tools import QuoteMatch, quote_text
