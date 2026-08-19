@@ -14,7 +14,7 @@ Typical contents:
 - shared repo/test-data path helpers
 - generic pytest-process setup
 
-Reusable support may read repository metadata from `[tool.py_lib_starter]`, but
+Reusable support may read repository metadata from `[tool.ternforge]`, but
 it should not import the product package or assume its public APIs.
 
 ## Package-Specific Support

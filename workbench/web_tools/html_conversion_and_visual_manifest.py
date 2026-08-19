@@ -21,7 +21,7 @@ Checks:
 Examples:
     Run manually:
         uv run python -m workbench.web_tools.html_conversion_and_visual_manifest
-        uv run py-lib-reproduce-running-loop \
+        uv run python scripts/reproduce_running_loop.py \
             workbench.web_tools.html_conversion_and_visual_manifest
 """
 
@@ -35,7 +35,7 @@ import html2text
 import httpx
 from lxml import html
 from lxml_html_clean import Cleaner
-from py_lib_tooling import console
+from py_lib_testkit import console
 from readability import Document
 
 # =============================================================================

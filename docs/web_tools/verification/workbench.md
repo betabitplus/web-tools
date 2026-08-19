@@ -86,7 +86,7 @@ direnv exec . uv run python -m workbench.web_tools.fetch_cache_and_page_artifact
 Reproduce the same probe inside an already-running event loop:
 
 ```bash
-direnv exec . uv run py-lib-reproduce-running-loop \
+direnv exec . uv run python scripts/reproduce_running_loop.py \
     workbench.web_tools.quote_text_and_elements
 ```
 

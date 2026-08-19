@@ -73,7 +73,7 @@ This proof area shows that package boundaries are enforced mechanically.
 proves facade modules use approved private-core boundaries and public-contract
 tests do not import private internals.
 
-`uv run py-lib-smoke-public-api`
+`uv run pytest tests/web_tools/unit/test_public_package.py -q --no-cov`
 proves the top-level public export list is present, unique, and coherent.
 
 Why this is sufficient:

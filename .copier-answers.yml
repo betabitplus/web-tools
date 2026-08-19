@@ -1,53 +1,40 @@
-_commit: v0.32.4
-_src_path: https://github.com/betabitplus/py-lib-starter.git
+_commit: v1.6.1
+_src_path: https://github.com/betabitplus/ternforge-template-py-library.git
 author_email: 8123085+betabitplus@users.noreply.github.com
 author_name: betabitplus
-ci_image_copy_paths:
-  - .pre-commit-config.yaml
-  - pyproject.toml
-  - src
-  - tests
 ci_playwright_browsers:
-  - chromium
+- chromium
 config_class_name: WebToolsConfig
 copyright_year: '2026'
+devcontainer_apt_packages: {}
 e2e_slices:
-  - name: public-boundary
+-   name: public-boundary
     path: tests/web_tools/e2e/public_boundary
-  - name: examples
-    path: tests/web_tools/e2e/examples
-  - name: fetch-cache-and-page-artifacts
+-   name: fetch-cache-and-page-artifacts
     path: tests/web_tools/e2e/fetch_cache_and_page_artifacts
-  - name: html-conversion-and-visual-manifest
+-   name: html-conversion-and-visual-manifest
     path: tests/web_tools/e2e/html_conversion_and_visual_manifest
-  - name: media-extraction-and-download-policy
+-   name: media-extraction-and-download-policy
     path: tests/web_tools/e2e/media_extraction_and_download_policy
-  - name: public-output-and-errors
+-   name: public-output-and-errors
     path: tests/web_tools/e2e/public_output_and_errors
-  - name: quote-text-and-elements
+-   name: quote-text-and-elements
     path: tests/web_tools/e2e/quote_text_and_elements
 env_prefix: WEB_TOOLS
 error_class_name: WebToolsError
 github_owner: betabitplus
 gitignore_extra_patterns: []
-initial_version: 0.2.0
-library_lane: standard-lib
+initial_version: 0.3.8
 package_name: web_tools
+pip_audit_waivers: []
 project_description: Standalone web content fetching, conversion, and quoting tools.
 project_name: web-tools
 project_slug: web-tools
 project_title: Web Tools
 project_title_lower: web tools
-renovate_uv_ignored_updates: []
 repository_name: web-tools
-runtime_git_ref: v0.32.4
-runtime_git_subdirectory: packages/py-lib-runtime
-runtime_git_url: https://github.com/betabitplus/py-lib-starter.git
-template_profile: python-lib-standard
-tooling_git_ref: v0.32.4
-tooling_git_subdirectory: packages/py-lib-tooling
-tooling_git_url: https://github.com/betabitplus/py-lib-starter.git
+runtime_audit_exclude_package: py-lib-runtime
 workspace_python_paths:
-  - src
+- src
 workspace_test_paths:
-  - tests
+- tests
