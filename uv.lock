@@ -2911,6 +2911,11 @@ dependencies = [
     { name = "structlog" },
 ]
 
+[package.optional-dependencies]
+cache = [
+    { name = "diskcache" },
+]
+
 [[package]]
 name = "py-lib-testkit"
 version = "2.0.2"
@@ -4404,7 +4409,7 @@ dependencies = [
     { name = "markdown" },
     { name = "pillow" },
     { name = "playwright" },
-    { name = "py-lib-runtime" },
+    { name = "py-lib-runtime", extra = ["cache"] },
     { name = "readability-lxml" },
     { name = "tenacity" },
 ]
@@ -4475,7 +4480,7 @@ requires-dist = [
     { name = "markdown", specifier = ">=3.8" },
     { name = "pillow" },
     { name = "playwright", specifier = ">=1.60.0" },
-    { name = "py-lib-runtime", git = "https://github.com/betabitplus/ternforge-tooling-py-runtime.git?tag=v1.1.6" },
+    { name = "py-lib-runtime", extras = ["cache"], git = "https://github.com/betabitplus/ternforge-tooling-py-runtime.git?tag=v1.1.6" },
     { name = "readability-lxml", specifier = ">=0.8" },
     { name = "tenacity", specifier = ">=9.1.4" },
 ]
