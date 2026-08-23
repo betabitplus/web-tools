@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.3.10](https://github.com/betabitplus/web-tools/compare/v0.3.9...v0.3.10) (2026-08-23)
+
+
+### Bug Fixes
+
+* install runtime cache dependency ([#59](https://github.com/betabitplus/web-tools/issues/59)) ([871a93a](https://github.com/betabitplus/web-tools/commit/871a93a4a358e86c888ffb902bc6c1026fe860a3))
+
 ## [0.3.9](https://github.com/betabitplus/web-tools/compare/v0.3.8...v0.3.9) (2026-08-23)
 
 
