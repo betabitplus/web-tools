@@ -4397,7 +4397,7 @@ wheels = [
 
 [[package]]
 name = "web-tools"
-version = "0.3.9"
+version = "0.3.10"
 source = { editable = "." }
 dependencies = [
     { name = "crawl4ai" },
