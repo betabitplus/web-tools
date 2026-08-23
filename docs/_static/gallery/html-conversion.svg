@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="280" viewBox="0 0 400 280" role="img" aria-labelledby="title desc">
+  <title id="title">HTML to Markdown</title>
+  <desc id="desc">HTML markup becoming readable Markdown with visual element IDs.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f172a"/>
+      <stop offset="1" stop-color="#164e63"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="280" rx="28" fill="url(#bg)"/>
+  <rect x="42" y="55" width="118" height="134" rx="16" fill="#f8fafc"/>
+  <path d="M82 94L62 112l20 18M120 94l20 18-20 18M111 80l-20 65" fill="none" stroke="#0f172a" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M176 121h47" stroke="#67e8f9" stroke-width="8" stroke-linecap="round"/>
+  <path d="M208 101l22 20-22 20" fill="none" stroke="#67e8f9" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="246" y="55" width="112" height="134" rx="16" fill="#f8fafc"/>
+  <path d="M269 84h66M269 106h49M269 128h61" stroke="#334155" stroke-width="6" stroke-linecap="round"/>
+  <rect x="269" y="149" width="28" height="20" rx="4" fill="#22d3ee"/>
+  <rect x="306" y="149" width="29" height="20" rx="4" fill="none" stroke="#0f172a" stroke-width="4"/>
+  <text x="200" y="239" text-anchor="middle" fill="#ffffff" font-size="25" font-family="system-ui, sans-serif" font-weight="700">HTML → Markdown</text>
+</svg>

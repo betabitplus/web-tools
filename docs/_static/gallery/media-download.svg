@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="280" viewBox="0 0 400 280" role="img" aria-labelledby="title desc">
+  <title id="title">Media download policy</title>
+  <desc id="desc">An allowed image flowing through download policy into cached media.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#172554"/>
+      <stop offset="1" stop-color="#14532d"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="280" rx="28" fill="url(#bg)"/>
+  <rect x="48" y="63" width="112" height="108" rx="16" fill="#f8fafc"/>
+  <circle cx="79" cy="91" r="12" fill="#60a5fa"/>
+  <path d="M64 150l31-34 20 19 16-16 15 31z" fill="#22c55e"/>
+  <path d="M176 117h52" stroke="#bbf7d0" stroke-width="8" stroke-linecap="round"/>
+  <path d="M211 97l23 20-23 20" fill="none" stroke="#bbf7d0" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M274 70v55" stroke="#f8fafc" stroke-width="9" stroke-linecap="round"/>
+  <path d="M252 106l22 22 22-22" fill="none" stroke="#f8fafc" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="236" y="139" width="76" height="35" rx="8" fill="#f8fafc"/>
+  <path d="M251 156h46" stroke="#166534" stroke-width="6" stroke-linecap="round"/>
+  <text x="200" y="239" text-anchor="middle" fill="#ffffff" font-size="25" font-family="system-ui, sans-serif" font-weight="700">Media policy</text>
+</svg>

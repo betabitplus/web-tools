@@ -38,8 +38,9 @@ flowchart LR
 Callers interact with one top-level `web_tools` import boundary rather than
 private browser, cache, parser, or downloader modules. The public functions and
 classes express four durable workflows: convert HTML, fetch page HTML, quote
-page content, and extract or download media from post-like payloads. See
-[../usage.md](../usage.md) for representative caller patterns.
+page content, and extract or download media from post-like payloads. See the
+{doc}`live executable examples </auto_examples/index>` for representative caller
+patterns and their observed results.
 
 HTML conversion is the central page-artifact slice. `html2html(...)` returns
 readable sanitized HTML, and `html2md(...)` returns Markdown plus a

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="280" viewBox="0 0 400 280" role="img" aria-labelledby="title desc">
+  <title id="title">Fetch with cache evidence</title>
+  <desc id="desc">A live web page flowing into a reusable page cache.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111827"/>
+      <stop offset="1" stop-color="#312e81"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="280" rx="28" fill="url(#bg)"/>
+  <circle cx="102" cy="119" r="52" fill="#f8fafc"/>
+  <ellipse cx="102" cy="119" rx="25" ry="52" fill="none" stroke="#4338ca" stroke-width="6"/>
+  <path d="M52 119h100M62 92h80M62 146h80" fill="none" stroke="#4338ca" stroke-width="5" stroke-linecap="round"/>
+  <path d="M169 119h54" stroke="#c4b5fd" stroke-width="8" stroke-linecap="round"/>
+  <path d="M207 99l23 20-23 20" fill="none" stroke="#c4b5fd" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <ellipse cx="298" cy="83" rx="53" ry="19" fill="#f8fafc"/>
+  <path d="M245 83v75c0 11 24 20 53 20s53-9 53-20V83" fill="#f8fafc" stroke="#a5b4fc" stroke-width="5"/>
+  <ellipse cx="298" cy="158" rx="53" ry="20" fill="#eef2ff" stroke="#a5b4fc" stroke-width="5"/>
+  <path d="M278 119h40" stroke="#4338ca" stroke-width="7" stroke-linecap="round"/>
+  <text x="200" y="239" text-anchor="middle" fill="#ffffff" font-size="25" font-family="system-ui, sans-serif" font-weight="700">Fetch + cache</text>
+</svg>
