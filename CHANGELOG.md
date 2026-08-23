@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.3.9](https://github.com/betabitplus/web-tools/compare/v0.3.8...v0.3.9) (2026-08-23)
+
+
+### Miscellaneous Chores
+
+* release docs 0.3.9 ([#57](https://github.com/betabitplus/web-tools/issues/57)) ([5f3a63e](https://github.com/betabitplus/web-tools/commit/5f3a63e3982d0bd12b62ba2eb2f80310aa9a1c4a))
+
 ## 0.1.0
 
 - Initial reusable Web tools library baseline.
