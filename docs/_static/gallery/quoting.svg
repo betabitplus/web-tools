@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="280" viewBox="0 0 400 280" role="img" aria-labelledby="title desc">
+  <title id="title">Quoted screenshot evidence</title>
+  <desc id="desc">A browser page with matched text and a highlighted visual element.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#18181b"/>
+      <stop offset="1" stop-color="#7f1d1d"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="280" rx="28" fill="url(#bg)"/>
+  <rect x="52" y="48" width="296" height="150" rx="18" fill="#f8fafc"/>
+  <rect x="52" y="48" width="296" height="28" rx="18" fill="#e4e4e7"/>
+  <circle cx="73" cy="62" r="5" fill="#ef4444"/>
+  <circle cx="89" cy="62" r="5" fill="#f59e0b"/>
+  <circle cx="105" cy="62" r="5" fill="#22c55e"/>
+  <path d="M80 101h112M80 121h151M80 141h96" stroke="#71717a" stroke-width="7" stroke-linecap="round"/>
+  <rect x="72" y="91" width="166" height="60" rx="8" fill="none" stroke="#ef4444" stroke-width="6"/>
+  <rect x="257" y="96" width="60" height="58" rx="8" fill="#fee2e2" stroke="#ef4444" stroke-width="6"/>
+  <path d="M272 137l13-15 10 10 10-18" fill="none" stroke="#991b1b" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="200" y="239" text-anchor="middle" fill="#ffffff" font-size="25" font-family="system-ui, sans-serif" font-weight="700">Quote evidence</text>
+</svg>
