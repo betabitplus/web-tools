@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.3.12](https://github.com/betabitplus/web-tools/compare/v0.3.11...v0.3.12) (2026-08-24)
+
+
+### Bug Fixes
+
+* optimize automatic docs rebuilds ([#67](https://github.com/betabitplus/web-tools/issues/67)) ([6db1066](https://github.com/betabitplus/web-tools/commit/6db10666ad63f492b75cb8ebf8504a5647580580))
+
 ## [0.3.11](https://github.com/betabitplus/web-tools/compare/v0.3.10...v0.3.11) (2026-08-24)
 
 
