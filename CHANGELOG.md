@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.3.11](https://github.com/betabitplus/web-tools/compare/v0.3.10...v0.3.11) (2026-08-24)
+
+
+### Bug Fixes
+
+* enable automatic hosted live docs ([#63](https://github.com/betabitplus/web-tools/issues/63)) ([c30c141](https://github.com/betabitplus/web-tools/commit/c30c1414e0ef3b44a7fa80605929c0541094c278))
+
 ## [0.3.10](https://github.com/betabitplus/web-tools/compare/v0.3.9...v0.3.10) (2026-08-23)
 
 
