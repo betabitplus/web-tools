@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.3.13](https://github.com/betabitplus/web-tools/compare/v0.3.12...v0.3.13) (2026-08-24)
+
+
+### Bug Fixes
+
+* simplify examples gallery ([#69](https://github.com/betabitplus/web-tools/issues/69)) ([fa7e99c](https://github.com/betabitplus/web-tools/commit/fa7e99c6d9fb85ab0b3e7794de9ff4d91dc2f446))
+
 ## [0.3.12](https://github.com/betabitplus/web-tools/compare/v0.3.11...v0.3.12) (2026-08-24)
 
 
