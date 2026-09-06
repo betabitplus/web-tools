@@ -1,4 +1,4 @@
-_commit: v1.8.8
+_commit: v1.21.3
 _src_path: https://github.com/betabitplus/ternforge-template-py-library.git
 author_email: 8123085+betabitplus@users.noreply.github.com
 author_name: betabitplus
@@ -7,19 +7,6 @@ ci_playwright_browsers:
 config_class_name: WebToolsConfig
 copyright_year: '2026'
 devcontainer_apt_packages: {}
-e2e_slices:
--   name: public-boundary
-    path: tests/web_tools/e2e/public_boundary
--   name: fetch-cache-and-page-artifacts
-    path: tests/web_tools/e2e/fetch_cache_and_page_artifacts
--   name: html-conversion-and-visual-manifest
-    path: tests/web_tools/e2e/html_conversion_and_visual_manifest
--   name: media-extraction-and-download-policy
-    path: tests/web_tools/e2e/media_extraction_and_download_policy
--   name: public-output-and-errors
-    path: tests/web_tools/e2e/public_output_and_errors
--   name: quote-text-and-elements
-    path: tests/web_tools/e2e/quote_text_and_elements
 env_prefix: WEB_TOOLS
 error_class_name: WebToolsError
 github_owner: betabitplus
