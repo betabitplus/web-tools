@@ -35,7 +35,10 @@ htmlcov/
 logs/
 data/
 tests/.outputs/
-workbench/.outputs/
+test-results/
+allure-results/
+allure-report/
+docs/_traceability/local-pytest.xml
 docs/_build/
 docs/auto_examples/
 docs/generated/
